@@ -1,3 +1,58 @@
 body {
-
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+h1, p {
+    text-align: center;
+    color: #fff;
+}
+label {
+    display: block;
+    margin: 0.4em 0;
+    color: #fff;
+    font-size: 18px;
+    padding: 0.2em 0.2em 0.5em;
+}
+form {
+    max-width: 600px;
+    min-width: 400px;
+    background: rgba(27, 27, 50, 0.9);
+    padding: 1em 1em 2em;
+    margin: 0 auto 2em;
+}
+input, select, textarea {
+    border-radius: 2px;
+    width: 100%;
+    min-height: 2.1em;
+    border: 1px solid #fff;
+}
+legend {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+}
+input[type="submit"] {
+    display: unset;
+    width: 60%;
+    height: 2em;
+    cursor: pointer;
+    margin: 1em auto;
+    background: rgb(0, 127, 0);
+    color: #fff;
+    min-width: 300px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 2px;
+}
+fieldset {
+    border: none;
+    padding: 0.12em 0;
+}
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
 }
