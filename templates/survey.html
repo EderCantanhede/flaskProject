@@ -9,18 +9,18 @@
     <title>Title</title>
 </head>
 <body>
-    <h1 id="title">Favorite technology search form</h1>
+    <h1 id="title">Favorite technology form</h1>
     <p id="description">Please come and participate in our survey</p>
     <form action="" method="post" id="survey-form">
         <fieldset>
-            <label for="name-label">Name: <input type="text" id="name-label"></label>
-            <label for="email-label">Email: <input type="email" id="email-label"></label>
-            <label for="age-label">Age: <input type="number" id="number-label" min="13" max=""></label>
+            <label id="name-label" for="name">Name: <input placeholder="Enter Your Name" type="text" id="name" required></label>
+            <label id="email-label" for="email">Email: <input placeholder="Enter Your Email" type="email" id="email" required></label>
+            <label id="number-label" for="age">Age: <input placeholder="Enter Your Age" type="number" id="number" min="13" max="120" required></label>
         </fieldset>
         <fieldset>
             <label>
                 Which option best describes your current role?
-                <select>
+                <select id="dropdown">
                     <option value="">Select Option</option>
                     <option value="1">Student</option>
                     <option value="2">Full Time Job</option>
@@ -32,14 +32,14 @@
         </fieldset>
         <fieldset>
             <legend>Would you like to learn a new skill?</legend>
-            <label><input class="inline" type="radio" name="radio" checked> Definitely</label>
-            <label><input class="inline" type="radio"> Maybe</label>
-            <label><input class="inline" type="radio"> Not Sure</label>
+            <label class="in-radio"><input class="inline" type="radio" name="skill" checked value="definitely"> Definitely</label>
+            <label  class="in-radio"><input class="inline" type="radio" name="skill" value="maybe"> Maybe</label>
+            <label  class="in-radio"><input class="inline" type="radio" name="skill" value="not-sure"> Not Sure</label>
         </fieldset>
         <fieldset>
             <label>
                 What's your favorite feature?
-                <select>
+                <select id="dropdown">
                     <option value="">Select Options</option>
                     <option value="1">Challenges</option>
                     <option value="2">Projects</option>
@@ -51,17 +51,17 @@
         </fieldset>
         <fieldset>
             <legend>What would you like to improve?</legend>
-            <label><input class="inline" type="checkbox">Front-end Projects</label>
-            <label><input class="inline" type="checkbox">Forum</label>
-            <label><input class="inline" type="checkbox">Back-end Projects</label>
-            <label><input class="inline" type="checkbox">Data Visualization</label>
-            <label><input class="inline" type="checkbox">Challenges</label>
-            <label><input class="inline" type="checkbox">Open Source Community</label>
-            <label><input class="inline" type="checkbox">Gitter help rooms</label>
-            <label><input class="inline" type="checkbox">Videos</label>
-            <label><input class="inline" type="checkbox">City Meetups</label>
-            <label><input class="inline" type="checkbox">Wiki</label>
-            <label><input class="inline" type="checkbox">Additional Courses</label>
+            <label class="in-checkbox"><input class="inline" type="checkbox" value="front-and">Front-end Projects</label>
+            <label class="in-checkbox"><input class="inline" type="checkbox" value="form">Forum</label>
+            <label class="in-checkbox"><input class="inline" type="checkbox" value="back-end">Back-end Projects</label>
+            <label class="in-checkbox"><input class="inline" type="checkbox" value="data-virtualization">Data Visualization</label>
+            <label class="in-checkbox"><input class="inline" type="checkbox" value="challenges">Challenges</label>
+            <label class="in-checkbox"><input class="inline" type="checkbox" value="open-source-">Open Source Community</label>
+            <label class="in-checkbox"><input class="inline" type="checkbox" value="gitter">Gitter help rooms</label>
+            <label class="in-checkbox"><input class="inline" type="checkbox" value="videos">Videos</label>
+            <label class="in-checkbox"><input class="inline" type="checkbox" value="city">City Meetups</label>
+            <label class="in-checkbox"><input class="inline" type="checkbox" value="wiki">Wiki</label>
+            <label class="in-checkbox"><input class="inline" type="checkbox" value="courses">Additional Courses</label>
         </fieldset>
         <fieldset>
             <label>
@@ -69,7 +69,7 @@
                 <textarea name="bio" id="" cols="50" rows="5">Enter your comment here...</textarea>
             </label>
         </fieldset>
-        <input type="submit" value="Submit">
+        <input class="button" id="submit" type="submit" value="Submit">
     </form>
 </body>
 </html>
